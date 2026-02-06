@@ -1,0 +1,14 @@
+# Django Web Framework
+Django>=5.0,<7.0
+
+# Production server
+gunicorn>=21.0
+
+# For production deployment
+whitenoise>=6.0
+
+# PostgreSQL Database
+psycopg2-binary>=2.9
+
+# Environment variables
+python-dotenv>=1.0

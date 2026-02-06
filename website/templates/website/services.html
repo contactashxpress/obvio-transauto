@@ -1,0 +1,242 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Nos Services | ObvioTrans Auto{% endblock %}
+{% block meta_description %}Découvrez nos services d'import-export : sourcing international, logistique mondiale et dédouanement complet.{% endblock %}
+
+{% block content %}
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-silver uppercase tracking-widest text-sm font-semibold mb-4" data-i18n="services_subtitle">Ce Que Nous Offrons</p>
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6" data-i18n="services_title">
+                Nos Services
+            </h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto" data-i18n="services_description">
+                Un accompagnement complet, de la sélection de votre véhicule jusqu'à sa livraison finale à votre porte.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES DETAIL ========== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Service 1: Sourcing -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-display text-3xl font-bold text-navy mb-4" data-i18n="service_sourcing_title">Sourcing International</h2>
+                    <p class="text-gray-600 mb-6" data-i18n="service_sourcing_full">
+                        Notre réseau de partenaires s'étend sur les principaux marchés mondiaux : Japon, Chine, Émirats Arabes Unis et Europe. Nous identifions et sélectionnons les véhicules et engins qui correspondent exactement à vos besoins.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_sourcing_1">Inspection Qualité</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_sourcing_1_desc">Chaque véhicule est inspecté par nos experts avant validation.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_sourcing_2">Négociation Prix</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_sourcing_2_desc">Nous négocions les meilleurs tarifs grâce à notre volume d'achat.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_sourcing_3">Certification Documents</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_sourcing_3_desc">Tous les documents d'origine et de conformité sont fournis.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Sourcing International" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+            
+            <!-- Service 2: Logistics -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="order-2 lg:order-1">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80" alt="Logistique Mondiale" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-display text-3xl font-bold text-navy mb-4" data-i18n="service_logistics_title">Logistique Mondiale</h2>
+                    <p class="text-gray-600 mb-6" data-i18n="service_logistics_full">
+                        Notre département logistique gère l'acheminement de vos véhicules depuis le pays d'origine jusqu'au port de destination de votre choix. Transport maritime conteneurisé ou RoRo selon vos besoins.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_logistics_1">Transport Maritime</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_logistics_1_desc">Conteneur ou RoRo, nous choisissons la meilleure option.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_logistics_2">Suivi en Temps Réel</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_logistics_2_desc">Tracking GPS de votre cargaison pendant tout le trajet.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_logistics_3">Assurance Cargo</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_logistics_3_desc">Couverture complète tous risques pendant le transport.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Service 3: Customs -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-display text-3xl font-bold text-navy mb-4" data-i18n="service_customs_title">Dédouanement</h2>
+                    <p class="text-gray-600 mb-6" data-i18n="service_customs_full">
+                        Nos transitaires agréés prennent en charge l'ensemble des formalités douanières. Nous anticipons et gérons toutes les démarches administratives pour une réception sans stress.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_customs_1">Formalités Douanières</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_customs_1_desc">Déclarations, taxes et droits de douane gérés pour vous.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_customs_2">Homologation</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_customs_2_desc">Assistance pour la mise en conformité locale si nécessaire.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <strong class="text-navy" data-i18n="service_customs_3">Livraison Finale</strong>
+                                <p class="text-gray-500 text-sm" data-i18n="service_customs_3_desc">Transport du port jusqu'à votre adresse si souhaité.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Dédouanement" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESS / TIMELINE ========== -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy section-title section-title-center inline-block" data-i18n="process_title">
+                    Notre Processus
+                </h2>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto" data-i18n="process_description">
+                    De votre demande à la réception de votre véhicule, un processus clair et transparent.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white font-display text-2xl font-bold">1</span>
+                        <div class="hidden md:block absolute top-1/2 left-full w-full h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-3" data-i18n="process_step1_title">Consultation</h3>
+                    <p class="text-gray-600 text-sm" data-i18n="process_step1_desc">Échange sur vos besoins, budget et spécifications techniques souhaitées.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white font-display text-2xl font-bold">2</span>
+                        <div class="hidden md:block absolute top-1/2 left-full w-full h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-3" data-i18n="process_step2_title">Sourcing</h3>
+                    <p class="text-gray-600 text-sm" data-i18n="process_step2_desc">Recherche, sélection et proposition de véhicules correspondant à vos critères.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white font-display text-2xl font-bold">3</span>
+                        <div class="hidden md:block absolute top-1/2 left-full w-full h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-3" data-i18n="process_step3_title">Expédition</h3>
+                    <p class="text-gray-600 text-sm" data-i18n="process_step3_desc">Achat, préparation et envoi de votre véhicule vers le port de destination.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-display text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-3" data-i18n="process_step4_title">Livraison</h3>
+                    <p class="text-gray-600 text-sm" data-i18n="process_step4_desc">Dédouanement et remise des clés. Votre véhicule est prêt !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="py-20 bg-navy">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-6" data-i18n="services_cta_title">
+                Prêt à Démarrer Votre Projet ?
+            </h2>
+            <p class="text-silver text-lg mb-10 max-w-2xl mx-auto" data-i18n="services_cta_desc">
+                Contactez-nous dès maintenant pour discuter de vos besoins. Notre équipe vous répond sous 24h avec une proposition personnalisée.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{% url 'website:contact' %}" class="btn-primary bg-accent text-white px-8 py-4 rounded font-bold" data-i18n="btn_free_quote">
+                    Demander un Devis Gratuit
+                </a>
+                <a href="{% url 'website:home' %}#tout-terrain" class="border-2 border-white text-white px-8 py-4 rounded font-bold hover:bg-white hover:text-navy transition-colors" data-i18n="btn_showroom">
+                    Voir le Showroom
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,238 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}À Propos | ObvioTrans Auto{% endblock %}
+{% block meta_description %}Découvrez l'histoire d'ObvioTrans Auto, votre partenaire de confiance pour l'import-export de véhicules depuis 2015.{% endblock %}
+
+{% block content %}
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-silver uppercase tracking-widest text-sm font-semibold mb-4" data-i18n="about_subtitle">Notre Histoire</p>
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6" data-i18n="about_title">
+                À Propos de Nous
+            </h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto" data-i18n="about_description">
+                Une décennie d'excellence dans l'import-export de véhicules et d'engins lourds à travers le monde.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== NOTRE HISTOIRE ========== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6 section-title" data-i18n="about_story_title">
+                        Une Vision, Une Mission
+                    </h2>
+                    <p class="text-gray-600 mb-6" data-i18n="about_story_p1">
+                        Fondée en 2015, ObvioTrans Auto est née d'une vision simple : faciliter l'accès aux meilleurs véhicules et engins du monde pour les entreprises et particuliers africains et moyen-orientaux.
+                    </p>
+                    <p class="text-gray-600 mb-6" data-i18n="about_story_p2">
+                        Notre fondateur, passionné par l'automobile et le commerce international, a rapidement identifié un besoin criant sur le marché : un partenaire fiable, transparent et professionnel pour accompagner les clients dans l'acquisition de véhicules tout-terrain, poids lourds et engins de construction.
+                    </p>
+                    <p class="text-gray-600" data-i18n="about_story_p3">
+                        Aujourd'hui, nous sommes fiers d'avoir accompagné plus de 1 500 clients satisfaits, livré plus de 2 500 véhicules et établi des partenariats solides avec les plus grands constructeurs et fournisseurs mondiaux.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Notre équipe" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NOS VALEURS ========== -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy section-title section-title-center inline-block" data-i18n="values_title">
+                    Nos Valeurs Fondamentales
+                </h2>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto" data-i18n="values_description">
+                    Ces principes guident chacune de nos actions et définissent notre façon de travailler avec vous.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="w-16 h-16 bg-navy rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-4" data-i18n="value_integrity">Intégrité</h3>
+                    <p class="text-gray-600" data-i18n="value_integrity_desc">
+                        Nous agissons avec honnêteté et transparence dans toutes nos transactions. Chaque prix est juste, chaque véhicule est décrit avec précision, sans surprise ni frais cachés.
+                    </p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="w-16 h-16 bg-navy rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-4" data-i18n="value_excellence">Excellence</h3>
+                    <p class="text-gray-600" data-i18n="value_excellence_desc">
+                        Nous ne nous contentons pas du minimum. Chaque véhicule est soigneusement inspecté, chaque expédition est suivie, et chaque client reçoit un service personnalisé de haute qualité.
+                    </p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="w-16 h-16 bg-navy rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-4" data-i18n="value_partnership">Partenariat</h3>
+                    <p class="text-gray-600" data-i18n="value_partnership_desc">
+                        Nous considérons chaque client comme un partenaire à long terme. Votre succès est notre succès, et nous travaillons ensemble pour atteindre vos objectifs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NOTRE ÉQUIPE ========== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy section-title section-title-center inline-block" data-i18n="team_title">
+                    Notre Équipe d'Experts
+                </h2>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto" data-i18n="team_description">
+                    Des professionnels passionnés, dédiés à la réussite de vos projets d'acquisition.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Directeur Général" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy" data-i18n="team_member1_name">Ahmed M.</h4>
+                    <p class="text-gray-500 text-sm" data-i18n="team_member1_role">Directeur Général</p>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80" alt="Responsable Sourcing" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy" data-i18n="team_member2_name">Karim B.</h4>
+                    <p class="text-gray-500 text-sm" data-i18n="team_member2_role">Responsable Sourcing</p>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80" alt="Directrice Logistique" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy" data-i18n="team_member3_name">Sarah L.</h4>
+                    <p class="text-gray-500 text-sm" data-i18n="team_member3_role">Directrice Logistique</p>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80" alt="Expert Technique" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-bold text-navy" data-i18n="team_member4_name">Omar K.</h4>
+                    <p class="text-gray-500 text-sm" data-i18n="team_member4_role">Expert Technique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CHIFFRES CLÉS ========== -->
+    <section class="py-20 bg-navy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white" data-i18n="stats_section_title">
+                    ObvioTrans en Chiffres
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-display font-bold text-accent mb-2" data-i18n="stat_years">10+</div>
+                    <p class="text-silver" data-i18n="stat_years_label">Années d'Expérience</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-display font-bold text-accent mb-2" data-i18n="stat_vehicles">2,500+</div>
+                    <p class="text-silver" data-i18n="stat_vehicles_label">Véhicules Livrés</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-display font-bold text-accent mb-2" data-i18n="stat_clients">1,500+</div>
+                    <p class="text-silver" data-i18n="stat_clients_label">Clients Satisfaits</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-display font-bold text-accent mb-2" data-i18n="stat_countries">25+</div>
+                    <p class="text-silver" data-i18n="stat_countries_label">Pays Desservis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS & PARTENAIRES ========== -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy section-title section-title-center inline-block" data-i18n="partners_title">
+                    Nos Partenaires & Certifications
+                </h2>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto" data-i18n="partners_description">
+                    Nous travaillons avec les meilleurs constructeurs et sommes certifiés pour garantir qualité et conformité.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <!-- Logo placeholders -->
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-24">
+                    <span class="font-bold text-gray-400">Toyota</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-24">
+                    <span class="font-bold text-gray-400">Nissan</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-24">
+                    <span class="font-bold text-gray-400">Sinotruck</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-24">
+                    <span class="font-bold text-gray-400">Shacman</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-24">
+                    <span class="font-bold text-gray-400">JAC Motors</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-24">
+                    <span class="font-bold text-gray-400">Dongfeng</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6" data-i18n="about_cta_title">
+                Prêt à Travailler avec Nous ?
+            </h2>
+            <p class="text-gray-600 text-lg mb-10 max-w-2xl mx-auto" data-i18n="about_cta_desc">
+                Rejoignez les milliers de clients qui nous ont fait confiance. Contactez-nous aujourd'hui pour discuter de votre projet.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{% url 'website:contact' %}" class="btn-primary bg-accent text-white px-8 py-4 rounded font-bold" data-i18n="btn_contact">
+                    Nous Contacter
+                </a>
+                <a href="{% url 'website:home' %}#tout-terrain" class="border-2 border-navy text-navy px-8 py-4 rounded font-bold hover:bg-navy hover:text-white transition-colors" data-i18n="btn_showroom">
+                    Voir le Showroom
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

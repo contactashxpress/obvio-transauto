@@ -1,0 +1,638 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}ObvioTrans Auto | Import-Export Véhicules & Engins{% endblock %}
+
+{% block content %}
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero-gradient min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="text-white">
+                    <p class="text-silver uppercase tracking-widest text-sm font-semibold mb-4" data-i18n="hero_subtitle">Import-Export International</p>
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6" data-i18n="hero_title">
+                        Votre Partenaire de <span class="text-accent">Confiance</span> pour le Sourcing International
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 max-w-xl" data-i18n="hero_description">
+                        Spécialistes de l'import-export de véhicules tout-terrain, poids lourds et engins BTP. 
+                        Qualité garantie, prix compétitifs, accompagnement de A à Z.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#tout-terrain" class="btn-primary bg-accent text-white px-8 py-4 rounded font-bold text-center" data-i18n="hero_btn_showroom">
+                            Découvrir le Showroom
+                        </a>
+                        <a href="{% url 'website:contact' %}" class="border-2 border-white text-white px-8 py-4 rounded font-bold text-center hover:bg-white hover:text-navy transition-colors" data-i18n="hero_btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative">
+                    <img 
+                        src="{% static 'website/images/hero-vehicle.png' %}" 
+                        alt="Véhicule tout-terrain premium"
+                        class="rounded-lg shadow-2xl w-full object-cover"
+                    >
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl hidden lg:block">
+                        <p class="text-silver text-sm uppercase tracking-wide" data-i18n="hero_since">Depuis</p>
+                        <p class="font-display text-4xl font-bold text-navy">2015</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-gray-700">
+                <div class="text-center">
+                    <p class="font-display text-4xl lg:text-5xl font-bold text-white">10+</p>
+                    <p class="text-silver mt-2" data-i18n="stat_years">Années d'Expérience</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-display text-4xl lg:text-5xl font-bold text-white">2500+</p>
+                    <p class="text-silver mt-2" data-i18n="stat_vehicles">Véhicules Livrés</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-display text-4xl lg:text-5xl font-bold text-white">35+</p>
+                    <p class="text-silver mt-2" data-i18n="stat_countries">Pays Desservis</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-display text-4xl lg:text-5xl font-bold text-white">100%</p>
+                    <p class="text-silver mt-2" data-i18n="stat_satisfaction">Clients Satisfaits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CATEGORY NAVIGATION ========== -->
+    <section class="py-8 bg-navy sticky top-20 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#tout-terrain" class="bg-white/10 hover:bg-accent text-white px-6 py-3 rounded font-semibold transition-colors" data-i18n="cat_offroad">
+                    Véhicules Tout-Terrain
+                </a>
+                <a href="#poids-lourds" class="bg-white/10 hover:bg-accent text-white px-6 py-3 rounded font-semibold transition-colors" data-i18n="cat_trucks">
+                    Poids Lourds
+                </a>
+                <a href="#engins-btp" class="bg-white/10 hover:bg-accent text-white px-6 py-3 rounded font-semibold transition-colors" data-i18n="cat_construction">
+                    Engins BTP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 1: VÉHICULES TOUT-TERRAIN ========== -->
+    <section id="tout-terrain" class="py-20 bg-white scroll-mt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-12">
+                <div class="w-14 h-14 bg-accent rounded flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy" data-i18n="section_offroad_title">Véhicules Tout-Terrain</h2>
+                    <p class="text-gray-600 mt-1" data-i18n="section_offroad_subtitle">Toyota Land Cruiser, Nissan Patrol et plus</p>
+                </div>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card: Toyota Land Cruiser FJZ 70 -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/hero-vehicle.png' %}" alt="Toyota Land Cruiser 70 Series" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_lc70">Toyota Land Cruiser FJZ 70</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_lc70_engine">4.5L V8 Diesel</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_power">Puissance</strong> : <span data-i18n="vehicle_lc70_power">205 ch</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_terrain">Terrain</strong> : <span data-i18n="vehicle_lc70_terrain">Tout-terrain extrême</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Toyota+Land+Cruiser+FJZ+70" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Toyota Land Cruiser FJZ 76 -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/land76.jpg' %}" alt="Toyota Land Cruiser 76" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_lc76">Toyota Land Cruiser FJZ 76</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_lc76_engine">4.5L V8 Turbo Diesel</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_config">Configuration</strong> : <span data-i18n="vehicle_lc76_config">Station Wagon</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_capacity">Capacité</strong> : <span data-i18n="vehicle_lc76_capacity">5-8 places</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Toyota+Land+Cruiser+FJZ+76" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Toyota Land Cruiser FJZ 79 -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/land79.jpg' %}" alt="Toyota Land Cruiser 79 Pickup" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_lc79">Toyota Land Cruiser FJZ 79</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_type">Type</strong> : <span data-i18n="vehicle_lc79_type">Pick-up Double Cabine</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_payload">Charge utile</strong> : <span data-i18n="vehicle_lc79_payload">1,200 kg</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_transmission">Transmission</strong> : <span data-i18n="vehicle_lc79_transmission">4x4 Permanente</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Toyota+Land+Cruiser+FJZ+79" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Toyota Land Cruiser Prado -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/landprado.jpg' %}" alt="Toyota Land Cruiser Prado" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_prado">Toyota Land Cruiser Prado</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_prado_engine">2.8L Diesel / 4.0L V6</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_comfort">Confort</strong> : <span data-i18n="vehicle_prado_comfort">Premium SUV</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_safety">Sécurité</strong> : <span data-i18n="vehicle_prado_safety">Toyota Safety Sense</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Toyota+Land+Cruiser+Prado" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Toyota Land Cruiser 300 -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/land300.jpg' %}" alt="Toyota Land Cruiser 300" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_lc300">Toyota Land Cruiser 300</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_lc300_engine">3.5L V6 Twin-Turbo</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_power">Puissance</strong> : <span data-i18n="vehicle_lc300_power">415 ch</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_technology">Technologie</strong> : <span data-i18n="vehicle_lc300_tech">TNGA-F Platform</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Toyota+Land+Cruiser+300" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Nissan Patrol -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/nissany62.jpg' %}" alt="Nissan Patrol" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_patrol">Nissan Patrol Y62</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_patrol_engine">5.6L V8</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_power">Puissance</strong> : <span data-i18n="vehicle_patrol_power">400 ch</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_luxury">Luxe</strong> : <span data-i18n="vehicle_patrol_luxury">Intérieur cuir premium</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Nissan+Patrol+Y62" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 2: POIDS LOURDS ========== -->
+    <section id="poids-lourds" class="py-20 bg-light scroll-mt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-12">
+                <div class="w-14 h-14 bg-accent rounded flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy" data-i18n="section_trucks_title">Poids Lourds</h2>
+                    <p class="text-gray-600 mt-1" data-i18n="section_trucks_subtitle">Sinotruck, Howo, Shacman, JAC Motors, Dongfeng</p>
+                </div>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card: Sinotruck Howo A7 -->
+                <div class="bg-white rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/sinhowo.jpg' %}" alt="Sinotruck Howo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_howo_a7">Sinotruck Howo A7</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_payload">Charge utile</strong> : <span data-i18n="vehicle_howo_a7_payload">30-40 tonnes</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_howo_a7_engine">371-420 HP</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_type">Type</strong> : <span data-i18n="vehicle_howo_a7_type">Benne / Tracteur</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Sinotruck+Howo+A7" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Howo TX Series -->
+                <div class="bg-white rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/howotx.jpg' %}" alt="Howo TX Series" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_howo_tx">Howo TX Series</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_cabin">Cabine</strong> : <span data-i18n="vehicle_howo_tx_cabin">Luxe climatisée</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_howo_tx_engine">480 HP Euro V</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_gearbox">Boîte</strong> : <span data-i18n="vehicle_howo_tx_gearbox">ZF 16 vitesses</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Howo+TX+Series" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Shacman X3000 -->
+                <div class="bg-white rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/x3000.jpg' %}" alt="Shacman X3000" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_shacman">Shacman X3000</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_shacman_engine">Weichai 400 HP</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_load">Charge</strong> : <span data-i18n="vehicle_shacman_load">35 tonnes</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_axles">Essieux</strong> : <span data-i18n="vehicle_shacman_axles">6x4 / 8x4</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Shacman+X3000" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: JAC Motors N-Series -->
+                <div class="bg-white rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/jacmotos.jpg' %}" alt="JAC Motors N-Series" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_jac">JAC Motors N-Series</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_type">Type</strong> : <span data-i18n="vehicle_jac_type">Camion léger/moyen</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_load">Charge</strong> : <span data-i18n="vehicle_jac_load">3-8 tonnes</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_usage">Usage</strong> : <span data-i18n="vehicle_jac_usage">Distribution urbaine</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=JAC+Motors+N-Series" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Dongfeng KX Series -->
+                <div class="bg-white rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/kz.jpg' %}" alt="Dongfeng KX" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_dongfeng">Dongfeng KX Series</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_dongfeng_engine">Cummins 450 HP</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_tractor">Tracteur</strong> : <span data-i18n="vehicle_dongfeng_tractor">Long-courrier</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_tank">Réservoir</strong> : <span data-i18n="vehicle_dongfeng_tank">600L Diesel</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Dongfeng+KX+Series" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: FAW J7 Premium -->
+                <div class="bg-white rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-56 overflow-hidden">
+                        <img src="{% static 'website/images/faw.jpg' %}" alt="FAW J7" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_faw">FAW J7 Premium</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_engine">Moteur</strong> : <span data-i18n="vehicle_faw_engine">550 HP</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_cabin">Cabine</strong> : <span data-i18n="vehicle_faw_cabin">Super Space Cab</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_transmission">Transmission</strong> : <span data-i18n="vehicle_faw_transmission">AMT 12 vitesses</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=FAW+J7+Premium" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 3: ENGINS BTP ========== -->
+    <section id="engins-btp" class="py-20 bg-white scroll-mt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-12">
+                <div class="w-14 h-14 bg-accent rounded flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy" data-i18n="section_construction_title">Engins BTP</h2>
+                    <p class="text-gray-600 mt-1" data-i18n="section_construction_subtitle">Niveleuses, Chargeuses, Tractopelles, Bulldozers</p>
+                </div>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card: Niveleuse -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="{% static 'website/images/niveleuse.jpg' %}" alt="Niveleuse" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_grader">Niveleuse</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_blade">Lame</strong> : <span data-i18n="vehicle_grader_blade">3.7 - 4.3m</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_power">Puissance</strong> : <span data-i18n="vehicle_grader_power">160-220 HP</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_usage">Usage</strong> : <span data-i18n="vehicle_grader_usage">Terrassement</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Niveleuse" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center text-sm" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Chargeuse -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="{% static 'website/images/charge.jpg' %}" alt="Chargeuse sur pneus" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_loader">Chargeuse</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_bucket">Godet</strong> : <span data-i18n="vehicle_loader_bucket">3 - 5 m³</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_load">Charge</strong> : <span data-i18n="vehicle_loader_load">5-8 tonnes</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_type">Type</strong> : <span data-i18n="vehicle_loader_type">Sur pneus</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Chargeuse" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center text-sm" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Tractopelle -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="{% static 'website/images/topel.jpg' %}" alt="Tractopelle" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_backhoe">Tractopelle</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_depth">Profondeur</strong> : <span data-i18n="vehicle_backhoe_depth">4-6m</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_power">Puissance</strong> : <span data-i18n="vehicle_backhoe_power">90-110 HP</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_versatile">Polyvalent</strong> : <span data-i18n="vehicle_backhoe_versatile">Chargeur + Pelle</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Tractopelle" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center text-sm" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card: Bulldozer -->
+                <div class="bg-light rounded-lg overflow-hidden card-hover shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="{% static 'website/images/bul.jpg' %}" alt="Bulldozer" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-navy mb-4" data-i18n="vehicle_bulldozer">Bulldozer</h3>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_blade">Lame</strong> : <span data-i18n="vehicle_bulldozer_blade">3.5 - 4.5m</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_power">Puissance</strong> : <span data-i18n="vehicle_bulldozer_power">220-320 HP</span></span>
+                            </div>
+                            <div class="flex items-center text-gray-600 text-sm">
+                                <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                                <span><strong data-i18n="spec_tracks">Chenilles</strong> : <span data-i18n="vehicle_bulldozer_tracks">Heavy Duty</span></span>
+                            </div>
+                        </div>
+                        <a href="{% url 'website:contact' %}?model=Bulldozer" class="btn-primary block w-full bg-accent text-white py-3 rounded font-semibold text-center text-sm" data-i18n="btn_quote">
+                            Demander un Devis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy section-title section-title-center inline-block" data-i18n="why_title">
+                    Pourquoi Nous Choisir ?
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                    <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-4" data-i18n="why_quality_title">Qualité Certifiée</h3>
+                    <p class="text-gray-600" data-i18n="why_quality_desc">Chaque véhicule est inspecté et certifié avant expédition. Garantie de conformité aux normes internationales.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                    <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-4" data-i18n="why_delivery_title">Livraison Rapide</h3>
+                    <p class="text-gray-600" data-i18n="why_delivery_desc">Réseau logistique mondial optimisé. Livraison dans les délais convenus, partout en Afrique et au-delà.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center card-hover">
+                    <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-navy mb-4" data-i18n="why_support_title">Accompagnement Total</h3>
+                    <p class="text-gray-600" data-i18n="why_support_desc">De la commande au dédouanement, nous vous accompagnons à chaque étape. Service client dédié 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="py-20 bg-navy">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-6" data-i18n="cta_title">
+                Vous ne Trouvez pas Votre Modèle ?
+            </h2>
+            <p class="text-silver text-lg mb-10 max-w-2xl mx-auto" data-i18n="cta_description">
+                Notre catalogue est bien plus vaste. Contactez-nous avec vos spécifications et nous trouverons le véhicule ou l'engin parfait pour vos besoins.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{% url 'website:contact' %}" class="btn-primary bg-accent text-white px-8 py-4 rounded font-bold" data-i18n="btn_free_quote">
+                    Demander un Devis Gratuit
+                </a>
+                <a href="{% url 'website:services' %}" class="border-2 border-white text-white px-8 py-4 rounded font-bold hover:bg-white hover:text-navy transition-colors" data-i18n="btn_services">
+                    Découvrir Nos Services
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
