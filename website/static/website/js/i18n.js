@@ -70,7 +70,7 @@ const translations = {
         spec_tracks: "Chenilles",
 
         // Vehicle Names & Specs
-        vehicle_lc70: "Toyota Land Cruiser FJZ 70",
+        vehicle_lc70: "Toyota Land Cruiser FJZ 79",
         vehicle_lc70_engine: "4.5L V8 Diesel",
         vehicle_lc70_power: "205 ch",
         vehicle_lc70_terrain: "Tout-terrain extrême",
@@ -402,7 +402,7 @@ const translations = {
         contact_info_title: "Informations de Contact",
         contact_whatsapp_link: "Démarrer une conversation →",
         contact_email_response: "Réponse sous 24h garantie",
-        contact_address_note: "Sur rendez-vous uniquement",
+        contact_address_note: "58 Bd Sain-Marcel, 75005 Paris, France",
         contact_social: "Suivez-nous",
         form_title: "Demander un Devis Gratuit",
         form_name: "Nom complet *",
@@ -505,7 +505,7 @@ const translations = {
         spec_tracks: "Tracks",
 
         // Vehicle Names & Specs
-        vehicle_lc70: "Toyota Land Cruiser FJZ 70",
+        vehicle_lc70: "Toyota Land Cruiser FJZ 79",
         vehicle_lc70_engine: "4.5L V8 Diesel",
         vehicle_lc70_power: "205 hp",
         vehicle_lc70_terrain: "Extreme off-road",
@@ -837,7 +837,7 @@ const translations = {
         contact_info_title: "Contact Information",
         contact_whatsapp_link: "Start a conversation →",
         contact_email_response: "Guaranteed response within 24h",
-        contact_address_note: "By appointment only",
+        contact_address_note: "58 Bd Sain-Marcel, 75005 Paris, France",
         contact_social: "Follow us",
         form_title: "Request a Free Quote",
         form_name: "Full name *",
@@ -940,7 +940,7 @@ const translations = {
         spec_tracks: "السلاسل",
 
         // Vehicle Names & Specs
-        vehicle_lc70: "تويوتا لاند كروزر FJZ 70",
+        vehicle_lc70: "تويوتا لاند كروزر FJZ 79",
         vehicle_lc70_engine: "4.5 لتر V8 ديزل",
         vehicle_lc70_power: "205 حصان",
         vehicle_lc70_terrain: "طرق وعرة شديدة",
@@ -1272,7 +1272,7 @@ const translations = {
         contact_info_title: "معلومات الاتصال",
         contact_whatsapp_link: "ابدأ محادثة ←",
         contact_email_response: "رد مضمون خلال 24 ساعة",
-        contact_address_note: "بموعد مسبق فقط",
+        contact_address_note: "58 Bd Sain-Marcel, 75005 Paris, France",
         contact_social: "تابعنا",
         form_title: "طلب عرض سعر مجاني",
         form_name: "الاسم الكامل *",
